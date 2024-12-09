@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/music_bg"
+    android:gravity="center">
+
+
+    <EditText
+        android:id="@+id/playlistName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter playlist name"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/darker_gray" />
+    <Button
+        android:id="@+id/addPlaylistButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Playlist"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="8dp" />
+    <Button
+        android:id="@+id/goToHomeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go To HomePage"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="8dp" />
+    <ListView
+        android:id="@+id/playlistListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@drawable/music_logo"
+        android:dividerHeight="1dp"
+        android:padding="8dp"
+        android:clipToPadding="false" />
+</LinearLayout>
